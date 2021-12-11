@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            const scores = [75,80,65,55,60,85,90,100,70,50,85,92];
+
+            let close=100, gap = 0, index=0;
+
+            for(let i = 0; i<scores.length; i++){
+                gap = Math.abs(78-scores[i]);
+             
+                if(close>gap){
+                    close = gap;
+                    index = i;
+                }
+                
+            }
+            console.log(scores[index]);
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>배열 숫자 중 78에 가장 가까운 수</h1>
+    <p>const scores = [75,80,65,55,60,85,90,100,70,50,85,92];</p>
+</body>
+</html>

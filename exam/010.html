@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            const box = document.querySelector("#box");
+            const check = document.querySelector('#logIn');
+
+            check.addEventListener("click", function(){
+                let password = box.value;
+                if(password ===""){
+                    alert("비밀번호는 필수입력입니다")
+                }
+                else if (password.length<8 || password.length >10){
+                    alert("비밀번호는 8자에서 10자 입니다")
+                }
+                else{
+                    alert("비밀번호를 확인합니다")
+                }
+
+            })
+
+
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+<h1>비밀번호 확인</h1>    
+<div>비밀번호를 입력하지 않으면 "비밀번호는 필수입력입니다"<br>
+
+    입력한 비밀번호가 8자미만 또는 10자를 넘는다면 "비밀번호는 8자에서 10자입니다"<br>
+    
+    비밀번호를 적절하게 입력했으면 "비밀번호를 확인합니다"</div><br>
+    <label for="">비밀번호</label>
+    <input type="password" id="box">
+    <button id = "logIn">로그인</button>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+    
+    window.onload=function(){
+
+        const students = [ {이름: '홍길동', 국어: 77, 영어:85}, {이름: '전우치', 국어: 67, 영어:75}, {이름: '임꺽정', 국어: 70, 영어:80}, 
+    {이름: '고길동', 국어: 85, 영어:65}, {이름: '한정석', 국어: 90, 영어:85}, {이름: '조설아', 국어: 85, 영어:80} ];
+        const btn = document.querySelector("#print")
+        const ps = document.querySelector("#pass")
+        const avg = document.querySelector("#avg")
+
+        btn.addEventListener("click",function(){
+        let sumKor = 0, sumEng=0, count = 0;
+            for(const score of students){
+                if(score.국어>=80 && score.영어>=80){
+                    count++;
+                    sumKor += score.국어;
+                    sumEng += score.영어;
+                }
+            }
+            const hap = sumKor+sumEng;
+            ps.innerHTML = "합격자 수 : " + count;
+            avg.innerHTML = "평균점수 : " + hap/(count*2)
+
+        })
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+    <h1>배열을 대상으로 합격자의 숫자와 평균 점수를 출력</h1>
+    <div>국어, 영어가 모두 80점이상이면 합격
+        const students = [ {이름: '홍길동', 국어: 77, 영어:85}, {이름: '전우치', 국어: 67, 영어:75}, {이름: '임꺽정', 국어: 70, 영어:80}, 
+        {이름: '고길동', 국어: 85, 영어:65}, {이름: '한정석', 국어: 90, 영어:85}, {이름: '조설아', 국어: 85, 영어:80} ];
+    </div>
+    <button id="print">정보출력</button>
+    <p id = 'pass'>합격자 수</p><br>
+    <p id = 'avg'>평균점수</p>
+</body>
+</html>

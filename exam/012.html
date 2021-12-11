@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            const input = document.querySelector("#input");
+            const print = document.querySelector("#print");
+            const box = document.querySelector("#box");
+
+            let ar = [];
+            print.addEventListener("click",function(){
+                ar.push(input.value);
+                box.innerHTML = ar;
+                input.value = "";
+            })            
+
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>값을 입력받아 배열에 저장해 출력하기</h1>
+    <input type="text" name="" id="input">
+    <button id="print">입력하기</button>
+    <hr>
+    <div id="box"></div>
+
+</body>
+</html>

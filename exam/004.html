@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            const scores = [75,80,65,55,60,85,90,100,70,50,85,92];
+            let sum =0, max = 0, min = 100;
+            for(const score of scores){
+                sum += score;
+                if(score>max){
+                    max=score;
+                }
+                if(score<min){
+                    min=score;
+                }
+            }
+            console.log("최소, 최댓값을 제외한 합계" + (sum-min-max));
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>배열에서 최대, 최소를 제외한 합계 출력</h1>
+    <p>const scores = [75,80,65,55,60,85,90,100,70,50,85,92];</p>
+</body>
+</html>

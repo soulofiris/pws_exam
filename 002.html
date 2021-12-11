@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2번 페이지</title>
+
+    <style>
+        * {
+            margin: 0; padding:0;
+            box-sizing: border-box;
+        }
+        #header, #footer {
+            width : 1200px;
+            color : white;
+            text-align: center;
+            margin : 0 auto;
+        }
+        #header{
+            background-color: orange;
+            height: 50px;
+            line-height: 50px;
+        }
+        nav {
+            position : sticky;
+            top : 0;
+        }
+        ul {
+            width : 1200px;
+            color : white;
+            text-align: center;
+            margin : 0 auto;
+            background-color: slategray;
+            overflow: hidden;
+        }
+        li {
+            width: 300px;
+            float: left;
+            list-style: none;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            background-color : darkolivegreen
+        }
+        #main {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #aside {
+            float: left;
+            width: 200px;
+            height: 600px;
+        }
+        .aside{
+            padding : 0 ;
+            margin : 0;
+            height : 200px;
+            line-height: 200px;
+            border: 2px solid white;
+            
+        }
+        #aside a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: green;
+            display: block;
+            background-color: honeydew;
+            }
+        #content{
+            float: left;
+            width: 1000px;
+            height: 1200px;
+        }
+        .title{
+            color: red;
+            font-size: 1.2em;
+        }
+        .text{
+            color: darkslateblue;
+        }
+        #footer{
+            background-color: pink;
+            clear: both;
+        }
+        #footer a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"><h1>강사소개</h1></header>
+    <nav>
+        <ul>
+            <li><a href="#">센터소개</a></li>
+            <li><a href="#">교육과정</a></li>
+            <li><a href="#">수강후기</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <aside id="aside">
+            <div class="aside"><a href="#">개강일정</a></div>
+            <div class="aside"><a href="#">수강신청</a></div>
+            <div class="aside"><a href="#">공지사항</a></div>
+        </aside>
+        <section id="content">
+            <div>
+                <h2>김경선교수</h2>
+                <div>
+                    <img src="image/pic1.png">
+                </div>
+                <div>
+                    <p class = "title">전문분야</p>
+                    <p class = "text">R분석, 하둡, 파이썬, 인공지능, 몽고디비, Django, Oracle, Java, Java
+                        Framework, JSP, Flex&Ajax, Android, HTML5/CSS3, JavaScript, Real
+                        Project, Machine Learning, 데이터분석 및 시각화</p><br>
+                    <p class = "title">경력사항</p>
+                    <p class = "text">(현) 경영기술개발원 교육센터 전임교수(2003~현재)
+                        한훈직업전문학교 전임교수(2001~2003)
+                        송원정보처리학원 전임교수(1997~2001)
+                        교육학 석사
+                        MDTI교육센터 책임연구원</p><br>    
+                    <p class = "title">자격사항</p>
+                    <p class = "text">SCJP, OCP, 직업능력개발훈련교사(정보처리/전자/사무자동화),
+                        평생교육사, 정보처리기사</p>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h2>이영환 교수</h2>
+                <div>
+                    <img src="image/pic2.png">
+                </div>
+                <div>
+                    <p class = "title">전문분야</p>
+                    <p class = "text">R분석, 하둡, 파이썬, 인공지능, 몽고디비, 클라우드, Hybrid-App, IOT,
+                        Django, Oracle, Java, Java Framework, JSP, Flex&Ajax, Android,
+                        HTML5/CSS3, JavaScript, Real Project, Machine Learning, 데이터분석
+                        및 시각화</p><br>
+                    <p class = "title">경력사항</p>
+                    <p class = "text">(현) 경영개발기술원 교육센터 전임교수 (2016~현재)
+                        전산학 석사
+                        서울특별시립상계직업전문학교 웹프로그래밍 학과장 (1995~2011)
+                        중앙정보처리학원 강사 (2012~2015)</p><br>
+                    <p class = "title">자격사항</p>
+                    <p class = "text">정보처리기사, 교원자격증, 직업능력개발훈련교사 1급</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"><a href="#">메인페이지로</a></footer>
+</body>
+</html>

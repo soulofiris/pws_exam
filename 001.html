@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1번 페이지</title>
+    <style>
+        *{
+            margin :0 ;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        #page{
+            width: 1200px;
+            margin : auto;
+        }
+        #header, #navigation, #footer {
+            width : 1200px;
+            color : white;
+            text-align: center;
+            margin : 0 auto;
+        }
+        #header{
+            background-color: orange;
+            height: 50px;
+            line-height: 50px;
+        }
+        ul { margin: 0; 
+            padding: 0; 
+            overflow: hidden;   
+            background-color: cornflowerblue;
+            border-radius: 10px;
+        }
+        li {
+            list-style: none;
+            float: left;
+            width: 300px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            background-color: cornflowerblue;
+        }
+        li a:hover{
+            background-color: blue;
+        }
+        table {
+            width: 700px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        table,th, td {
+            border: 1px solid black ;
+            border-collapse: collapse;
+        }
+        td a{
+            background-color: cadetblue;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        td a:hover{
+            color: gray;
+        }
+        main {
+            width: 1200px;
+            margin : 0 auto;
+        }
+        #aside{
+            float: left;
+            width: 300px;
+            border: 1px solid burlywood;
+            height: 400px;
+        }
+        #content {
+            float: left;
+            width :900px;
+            border: 1px solid seagreen;
+            height: 700px;
+            text-align: center;
+        }
+        #footer{
+            background-color: skyblue;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <page id="page`">
+
+    <header id="header">머리말입니다</header>
+    <nav id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside id="aside">왼쪽 메타 데이터</aside>
+        <section id="content">
+            <h1>★영어회화 수강 안내★</h1>
+            <table>
+                <tr>
+                    <th>수강 레벨</th>
+                    <th>코스A</th>
+                    <th>코스H</th>
+                    <th>수강기간</th>
+                    <th>세부내용보기</th>
+                </tr>
+                <tr>
+                    <td>Level 1</td>
+                    <td>Side by Side 1</td>
+                    <td>American Headeway 1</td>
+                    <td>1개월</td>
+                    <td><a href="#">세부내용 보기</a></td>
+                </tr>
+                <tr>
+                    <td>Level 2</td>
+                    <td>Side by Side 2</td>
+                    <td>American Headeway 2</td>
+                    <td>1개월</td>
+                    <td><a href="#">세부내용 보기</a></td>
+                </tr>
+                <tr>
+                    <td>Level 3</td>
+                    <td>Side by Side 3</td>
+                    <td>American Headeway 3</td>
+                    <td>1개월</td>
+                    <td><a href="#">세부내용 보기</a></td>
+                </tr>
+                <tr>
+                    <td>Level 4</td>
+                    <td colspan="2">Exploding English 1</td>
+                    <td>2개월</td>
+                    <td><a href="#">세부내용 보기</a></td>
+                </tr>
+                <tr>
+                    <td>Level 5</td>
+                    <td colspan="2">Exploding English 2</td>
+                    <td>2개월</td>
+                    <td><a href="#">세부내용 보기</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer id="footer">꼬리말입니다</footer>
+
+</page>
+ 
+</body>
+</html>

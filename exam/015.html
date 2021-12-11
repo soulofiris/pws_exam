@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            const num1 = document.querySelector("#num1")
+            const num2 = document.querySelector("#num2")
+            const ggsg = document.querySelector("#ggsg")
+            const btn = document.querySelector("#print")
+            const result = document.querySelector("#span")
+
+            btn.addEventListener("click", function(){
+                let val1 = parseInt(num1.value);
+                let val2 = parseInt(num2.value);
+                if(ggsg.value ==1){
+                    result.innerHTML = "=" + (val1+val2);
+                }
+                if(ggsg.value ==2){
+                    result.innerHTML = "=" + (val1-val2);
+                }
+                if(ggsg.value ==3){
+                    result.innerHTML = "=" + (val1*val2);
+                }
+                if(ggsg.value ==4){
+                    result.innerHTML = "=" + (val1/val2);
+                }
+
+            })
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>사칙연산 계산기</h1>
+    <input type="text" id="num1">
+    <select name="" id="ggsg">
+        <option value="" disabled selected>연산을 선택하세요</option>
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+    </select>
+    <input type="text" id= "num2">
+    <span id="span">=</span>
+    <hr>
+    <button id="print">계산하기</button>
+</body>
+</html>

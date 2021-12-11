@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>약관 동의하기</h1>
+    <input type="checkbox" class = "promise" id ="box1" >약관1
+    <input type="checkbox" class = "promise" id ="box2">약관2
+    <input type="checkbox" class = "promise" id ="box3" >약관3
+    <input type="checkbox" id ="allCheck" onclick="check1()">모두 동의
+
+    <script>
+        const all = document.querySelector("#allCheck");
+        const boxes= document.querySelectorAll(".promise")
+    
+        
+        let check1 = function(){
+            if(all.checked==false){
+                for(let i = 0; i<boxes.length; i++){
+                    boxes[i].checked =false;
+                }
+            }
+                else{
+                    for(let i = 0; i<boxes.length; i++){
+                        boxes[i].checked =true;
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

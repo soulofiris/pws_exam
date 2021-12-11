@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            const checkBtn = document.querySelector("#check")
+            const inputBox = document.querySelector("#box")
+
+            checkBtn.addEventListener("click", function(){
+                const val= parseInt(inputBox.value);
+                if(isNaN(val)){
+                    alert("숫자를 입력하세요")
+                    inputBox.value = "";    
+                }
+                else{
+                    alert(val +"를 입력하였습니다")
+                }
+
+            })
+
+
+
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <h1>숫자를 입력받아 그대로 출력. 숫자가 아니면 오류 메시지</h1>
+    <input type="text" id='box'>
+    <button id="check">확인</button>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 페이지</title>
+    <style>
+        *{
+            margin :0 ;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        #page{
+            width: 1200px;
+            margin : auto;
+        }
+        #header, #navigation, #footer {
+            width : 1200px;
+            color : white;
+            text-align: center;
+            margin : 0 auto;
+        }
+        #header{
+            background-color: orange;
+            height: 50px;
+            line-height: 50px;
+        }
+        nav {
+            position : sticky;
+            top : 0;
+        }
+        ul { margin: 0; 
+            padding: 0; 
+            overflow: hidden;   
+            background-color: cornflowerblue;
+            border-radius: 10px;
+        }
+        li {
+            list-style: none;
+            float: left;
+            width: 400px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            background-color: cornflowerblue;
+        }
+        li a:hover{
+            background-color: blue;
+        }
+        
+        main {
+            width: 1200px;
+            margin : 0 auto;
+        }
+        #aside{
+            float: left;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+        }
+        .aside{
+            padding : 0 ;
+            margin : 0;
+            height : 200px;
+            line-height: 200px;
+            border: 2px solid white;
+            
+        }
+        #aside a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: green;
+            display: block;
+            background-color: palegoldenrod
+            }
+        #content {
+            float: left;
+            width :900px;
+            border: 1px solid seagreen;
+            height: 1200px;
+            text-align: center;
+        }
+        #content a{
+            text-decoration: none;
+            height: 80px;
+            line-height: 80px;
+            background-color: wheat;
+            color: black;
+            border: 1px solid gray;
+        }
+        #footer{
+            background-color: skyblue;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <page id="page`">
+
+    <header id="header"><h1>nav는 HTML파일들입니다.</h1></header>
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="001.html">Page 1</a></li>
+            <li><a href="002.html">Page 2</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <aside id="aside">
+            <div class="aside"><a href="#">아무런</a></div>
+            <div class="aside"><a href="#">링크도</a></div>
+            <div class="aside"><a href="#">없습니다</a></div>
+        </aside>
+        <section id="content">
+            <p><a href ="exam/001.html">자바스크립트 예제 001</a></p>
+            <p><a href ="exam/002.html">자바스크립트 예제 002</a></p>
+            <p><a href ="exam/003.html">자바스크립트 예제 003</a></p>
+            <p><a href ="exam/004.html">자바스크립트 예제 004</a></p>
+            <p><a href ="exam/005.html">자바스크립트 예제 005</a></p>
+            <p><a href ="exam/006.html">자바스크립트 예제 006</a></p>
+            <p><a href ="exam/007.html">자바스크립트 예제 007</a></p>
+            <p><a href ="exam/008.html">자바스크립트 예제 008</a></p>
+            <p><a href ="exam/009.html">자바스크립트 예제 009</a></p>
+            <p><a href ="exam/010.html">자바스크립트 예제 010</a></p>
+            <p><a href ="exam/011.html">자바스크립트 예제 011</a></p>
+            <p><a href ="exam/012.html">자바스크립트 예제 012</a></p>
+            <p><a href ="exam/013.html">자바스크립트 예제 013</a></p>
+            <p><a href ="exam/014.html">자바스크립트 예제 014</a></p>
+            <p><a href ="exam/015.html">자바스크립트 예제 015</a></p>
+        </section>
+    </main>
+    <footer id="footer">꼬리말입니다</footer>
+
+</page>
+ 
+</body>
+</html>

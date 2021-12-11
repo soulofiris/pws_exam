@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            const scores = [75,80,65,55,60,85,90,100,70,50,85,92];
+            let hap = 0, hapCount = 0, bul = 0, bulCount = 0;
+            for(const score of scores){
+                if(score>=70){
+                    hap +=score;
+                    hapCount++
+                }
+                else{
+                    bul += score;
+                    bulCount++;
+                }
+            }
+            console.log("합격자 수 : " + hapCount);
+            console.log("합격자 평균 : " + (hap/hapCount));
+            console.log("불합격자 수 : " + bulCount);
+            console.log("불합격자 평균 : " + (bul/bulCount));
+
+
+
+
+
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>합격자 숫자, 평균 및 불합격자 숫자 평균 출력</h1>
+    <div>
+        const scores = [75,80,65,55,60,85,90,100,70,50,85,92];
+
+        scores 배열을 대상으로 70점이상이면 합격
+    </div>
+</body>
+</html>

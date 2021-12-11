@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload=function(){
+            const input = document.querySelector("#input");
+            const print = document.querySelector("#print");
+            const arrBox = document.querySelector("#arrBox");
+            const sumBox = document.querySelector("#sumBox");
+            const avgBox = document.querySelector("#avgBox");
+
+            let ar =[];
+            print.addEventListener("click",function(){
+                ar.push(parseInt(input.value));
+                arrBox.innerHTML = "배열 : " +ar;
+                input.value = "";
+                let sum = 0, count=0, avg = 0;
+                for(let i =0; i <ar.length; i++){
+                    sum += ar[i];
+                    count++
+                }
+                sumBox.innerHTML = "합계 : " + sum;
+                avgBox.innerHTML = "평균 : " + (sum/count);
+            })
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <h1>값을 입력받아 배열에 저장, 합계와 평균 출력</h1>
+    <input type="text" name="" id="input">
+    <button id="print">입력하기</button>
+    <hr>
+    <div id="arrBox"></div>
+    <div id="sumBox"></div>
+    <div id="avgBox"></div>
+</body>
+</html>
